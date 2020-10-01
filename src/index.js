@@ -1,12 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+
+import 'bootstrap/dist/css/bootstrap.css'
+import './custom.scss'
 import './index.css';
-import App from './App';
+import RouteFunct from "./components/Route"
+
+import Accueil from "./components/Accueil";
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+      <RouteFunct/>
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -1,5 +1,74 @@
-divP
+.divPn
 {
-    background-color: #61dafb;
+    background-color: white;
     animation-name: divPanim;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.divP
+{
+    transform: scale(0);
+}
+#divW
+{
+    transform: scale(0);
+    background-color:#282c34;
+}
+
+
+@keyframes divPanim {
+    0%{transform: scale(0)}
+
+    40%{transform: scale(0.9)}
+    60%{transform: scale(0.8)}
+
+    100%{transform: scale(1)}
+}
+
+.voirPlusText:hover
+{
+    cursor: pointer;
+}
+
+.publicationModalBtn div
+{
+    padding: 1.5px;
+    background-color: #282c34;
+    border-radius: 100%;
+    margin-left: 3px;
+}
+
+.publicationModalBtn:hover
+{
+    cursor: pointer;
+}
+.modalDiv div
+{
+    border-bottom: 1px solid rgba(100,120,96,0.62);
+    font-family: Arial, serif;
+    font-size: 13px;
+
+}
+.modalDiv div:nth-child(7)
+{
+    border-bottom: none;
+}
+.modalDiv
+{
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.modal-20w
+{
+    border-radius: 50px;
+    width: 50%;
+    animation-name: modalPub;
+    animation-duration: 0.1s;
+    animation-fill-mode: forwards;
+    margin: auto;
+}
+@keyframes modalPub{
+    from{transform: scale(2)}
+    to{transform: scale(1)}
 }
